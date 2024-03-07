@@ -1,4 +1,5 @@
-/* ======= Common styles ======= */
+/* #region Common styles */
+
 body {
     font-family: "Roboto", sans-serif;
     color: #434455;
@@ -61,9 +62,9 @@ section {
     padding-bottom: 120px; */
 }
 
-/* ======= /Common-styles ======= */
+/* #endregion Common styles */
 
-/* ======= Page-header-styles ======= */
+/* #region Page-header-styles */
 .page-header {
     border-bottom: 1px solid #e7e9fc;
     box-shadow:
@@ -177,7 +178,7 @@ section {
     background-color: inherit;
 }
 
-/* ======= /Page-header-styles ======= */
+/* #endregion Page-header-styles */
 
 /* ======= Section-hero-styles ======= */
 .section-hero {
@@ -626,7 +627,7 @@ section {
         visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.is-open {
+.backdrop-form.is-open {
     opacity: 1;
     visibility: visible;
 }
@@ -845,6 +846,16 @@ section {
     left: 0;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    visibility: hidden;
+    transition:
+        opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+        visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.backdrop-window-nav-menu.is-open {
+    opacity: 1;
+    visibility: visible;
 }
 
 .window-nav-menu-wrapper {
@@ -917,8 +928,27 @@ section {
     color: #404bbf;
 }
 
+.window-nav-contacts {
+    margin-bottom: 48px;
+}
 
+.window-nav-contact-list-item:not(:last-child) {
+    margin-bottom: 24px;
+}
 
+.window-nav-contact-list-item-link {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+
+.window-nav-contact-list-item-link:hover,
+.window-nav-contact-list-item-link:focus {
+    color: #404bbf;
+}
 
 
 /* #endregion Modal window nav-menu */
