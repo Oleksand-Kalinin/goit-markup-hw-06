@@ -49,7 +49,6 @@ svg {
     padding-right: 15px;
     margin-left: auto;
     margin-right: auto;
-    /* border: 1px solid black; */
 }
 
 section {
@@ -170,6 +169,13 @@ section {
     background-size: cover;
     padding-top: 188px;
     padding-bottom: 188px;
+}
+
+@media (min-resolution: 192dpi) {
+    .section-hero {
+        background-image:
+            url(../images/hero/hero-background-img@2x.jpg);
+    }
 }
 
 .main-title {
