@@ -422,14 +422,14 @@ section {
 /* #region Our-portfolio-styles (Forth) */
 
 .our-portfolio-title {
-    /* color: #2E2F42;
+    color: #2E2F42;
     text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 1.11;
     letter-spacing: 0.02em;
     text-transform: capitalize;
-    margin-bottom: 72px; */
+    margin-bottom: 72px;
 }
 
 .our-portfolio-list {
@@ -440,18 +440,28 @@ section {
 }
 
 .our-portfolio-list-item {
-    /* width: calc((100% - 48px) / 3);
+    box-shadow:
+        0 2px 1px 0 rgba(46, 47, 66, 0.08),
+        0 1px 1px 0 rgba(46, 47, 66, 0.16),
+        0 1px 6px 0 rgba(46, 47, 66, 0.08);
+    /* 
+    width: calc((100% - 48px) / 3);
     transition:
-        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+        box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+    */
+}
+
+.our-portfolio-list-item:not(:last-child) {
+    margin-bottom: 48px;
 }
 
 .box-img-our-porfolio {
-    /* position: relative;
-    overflow: hidden; */
+    position: relative;
+    overflow: hidden;
 }
 
 .overlay-our-porfolio {
-    /* background-color: #4d5ae5;
+    background-color: #4d5ae5;
     padding: 40px 32px;
 
     line-height: 1.5;
@@ -465,7 +475,7 @@ section {
     height: 100%;
     transform: translateY(100%);
     transition:
-        transform 250ms cubic-bezier(0.4, 0, 0.2, 1); */
+        transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .our-portfolio-list-item:hover {
@@ -476,7 +486,7 @@ section {
 }
 
 .our-portfolio-list-item:hover .overlay-our-porfolio {
-    /* transform: translateY(0%); */
+    transform: translateY(0%);
 }
 
 .project-desc {
