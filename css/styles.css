@@ -343,7 +343,7 @@ section {
 @media only screen and (min-width: 1158px) {
 
     .section-hero {
-        max-width: 1158px;
+        max-width: 1440px;
         background-image:
             linear-gradient(rgba(46, 47, 66, 0.7),
                 rgba(46, 47, 66, 0.7)),
@@ -1163,6 +1163,8 @@ section {
         height: 100%;
         padding: 72px 16px 40px 16px;
         background-color: #ffffff;
+        display: flex;
+        flex-direction: column;
     }
 
     .btn-close-window-nav-menu {
@@ -1178,7 +1180,6 @@ section {
         border-radius: 50%;
         border: 1px solid rgba(0, 0, 0, 0.1);
         background-color: transparent;
-        /* #e7e9fc */
         padding: 0;
         fill: #2e2f42;
         transition:
@@ -1195,7 +1196,7 @@ section {
     }
 
     .window-nav-menu {
-        margin-bottom: 168px;
+        margin-bottom: auto;
     }
 
     .window-nav-menu-list-item:not(:last-child) {
